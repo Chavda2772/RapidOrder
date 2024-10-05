@@ -1,0 +1,6 @@
+@RapidOrder.ProducerAPI_HostAddress = http://localhost:5064
+
+GET {{RapidOrder.ProducerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

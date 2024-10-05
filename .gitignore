@@ -1,0 +1,20 @@
+*.csproj.user
+.vs/
+
+# common
+RapidOrder.Common/bin
+RapidOrder.Common/obj
+
+# consumer
+RapidOrder.Consumer/bin
+RapidOrder.Consumer/obj
+
+# presentation
+RapidOrder.PresentationUI/bin
+RapidOrder.PresentationUI/obj
+RapidOrder.PresentationUI/.angular
+RapidOrder.PresentationUI/node_modules
+
+# producer
+RapidOrder.ProducerAPI/bin
+RapidOrder.ProducerAPI/obj
