@@ -65,5 +65,7 @@
     <Build Include="dbo\Stored Procedures\usp_userDetails_UI.sql" />
     <Build Include="dbo\Stored Procedures\usp_getUserNameCount.sql" />
     <Build Include="dbo\Stored Procedures\usp_getUserDetailsByEmail.sql" />
+    <Build Include="dbo\Tables\Products.sql" />
+    <Build Include="dbo\Tables\Cart.sql" />
   </ItemGroup>
 </Project>

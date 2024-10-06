@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidOrder.ProducerAPI", "RapidOrder.ProducerAPI\RapidOrder.ProducerAPI.csproj", "{7D02C7BD-18F8-40FC-AC82-79F788D70E17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{72DD14A2-FDB5-49BA-8E29-8A624610CFD4} = {72DD14A2-FDB5-49BA-8E29-8A624610CFD4}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidOrder.Consumer", "RapidOrder.Consumer\RapidOrder.Consumer.csproj", "{8AE72793-468A-4F2C-8AD4-FE9A15F2A1C3}"
 EndProject

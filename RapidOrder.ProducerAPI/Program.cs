@@ -27,7 +27,6 @@ namespace RapidOrder.ProducerAPI
 
             app.UseAuthorization();
 
-
             app.MapControllers();
 
             app.Run();

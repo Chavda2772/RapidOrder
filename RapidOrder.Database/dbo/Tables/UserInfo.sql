@@ -9,8 +9,8 @@
     [ContactNo]     VARCHAR (12)  CONSTRAINT [DF__UserInfo__Contac__24927208] DEFAULT (NULL) NULL,
     [Theme]         VARCHAR (15)  CONSTRAINT [DF__UserInfo__Theme__25869641] DEFAULT (NULL) NULL,
     [ProfileUrl]    VARCHAR (500) CONSTRAINT [DF__UserInfo__Profil__267ABA7A] DEFAULT (NULL) NULL,
-    [IsVerified]    BINARY (1)    NOT NULL,
-    [IsActive]      BINARY (1)    NOT NULL,
+    [IsVerified]    BIT           NOT NULL,
+    [IsActive]      BIT           NOT NULL,
     [CreatedOn]     DATETIME2 (0) CONSTRAINT [DF__UserInfo__Create__276EDEB3] DEFAULT (getdate()) NOT NULL,
     [LastUpdatedOn] DATETIME2 (0) CONSTRAINT [DF__UserInfo__LastUp__286302EC] DEFAULT (getdate()) NOT NULL,
     CONSTRAINT [PK_UserInfo] PRIMARY KEY CLUSTERED ([UserId] ASC)
