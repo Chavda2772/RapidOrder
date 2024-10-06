@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidOrder.Common", "RapidO
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "RapidOrder.PresentationUI", "RapidOrder.PresentationUI\RapidOrder.PresentationUI.esproj", "{CFC5CA3A-E0B6-4579-9E5B-6C3E3352D410}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{D3558C72-DD0C-4264-AD84-5B854B7ECFF7}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RapidOrder.Database", "RapidOrder.Database\RapidOrder.Database.sqlproj", "{01E065D9-C60E-4183-B16F-D17F50861B40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,9 +39,18 @@ Global
 		{CFC5CA3A-E0B6-4579-9E5B-6C3E3352D410}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFC5CA3A-E0B6-4579-9E5B-6C3E3352D410}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFC5CA3A-E0B6-4579-9E5B-6C3E3352D410}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{01E065D9-C60E-4183-B16F-D17F50861B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E065D9-C60E-4183-B16F-D17F50861B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E065D9-C60E-4183-B16F-D17F50861B40}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{01E065D9-C60E-4183-B16F-D17F50861B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E065D9-C60E-4183-B16F-D17F50861B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E065D9-C60E-4183-B16F-D17F50861B40}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{01E065D9-C60E-4183-B16F-D17F50861B40} = {D3558C72-DD0C-4264-AD84-5B854B7ECFF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1A14C46F-0A40-4635-B072-2F737F7BDEE5}

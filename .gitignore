@@ -18,3 +18,8 @@ RapidOrder.PresentationUI/node_modules
 # producer
 RapidOrder.ProducerAPI/bin
 RapidOrder.ProducerAPI/obj
+
+# database
+*.sqlproj.user
+RapidOrder.Database/bin
+RapidOrder.Database/obj
