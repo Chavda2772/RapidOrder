@@ -19,8 +19,8 @@ namespace RapidOrder.ProducerAPI.Controllers
         [HttpPost]
         public IActionResult AddOrder()
         {
-            _messageProducer.SendMessage("Hello Mahesh Chavda");
-            return Ok("Message Sended.");
+            _messageProducer.SendBulkMessage();
+            return Ok("Messages Sended.");
         }
     }
 }

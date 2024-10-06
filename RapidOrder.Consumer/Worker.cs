@@ -16,7 +16,7 @@ namespace RapidOrder.Consumer
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             // Consume message
-            _rabbitMqConsumer.ConsumeQueue();
+            _rabbitMqConsumer.ConfigureConsumer();
 
             while (!stoppingToken.IsCancellationRequested)
             {

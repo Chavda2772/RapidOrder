@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RapidOrder.Common
+namespace RapidOrder.Common.Database.Interface
 {
-    internal interface dbHelper
+    public interface DbHelper
     {
-        string GetProductList(string tableName);
+        string GetProductList();
     }
 }
