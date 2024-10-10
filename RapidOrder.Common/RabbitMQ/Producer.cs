@@ -60,7 +60,7 @@ namespace RapidOrder.Common.RabbitMQ
                 properties.Persistent = false;
 
                 // Send bulk message
-                for (int i = 0; i < 1000; i++)
+                for (int i = 0; i < 1; i++)
                 {
                     byte[] messageBuffer = Encoding.Default.GetBytes($"Message count is: {i}");
 

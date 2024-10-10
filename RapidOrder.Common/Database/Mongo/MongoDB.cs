@@ -1,15 +1,15 @@
-﻿using RapidOrder.Common.Database.Interface;
+﻿using RapidOrder.Common.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RapidOrder.Common.Database
+namespace RapidOrder.Common.Database.Mongo
 {
-    internal class PostgreSQL : DbHelper
+    public class MongoDB : IDbHelper
     {
-        public string GetProductList()
+        public List<Product> GetProductList()
         {
             throw new NotImplementedException();
         }
