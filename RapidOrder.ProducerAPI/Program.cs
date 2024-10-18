@@ -1,4 +1,8 @@
 
+using RapidOrder.Common.Database;
+using RapidOrder.Common.DTO;
+using RapidOrder.Common.RabbitMQ;
+
 namespace RapidOrder.ProducerAPI
 {
     public class Program
@@ -8,8 +12,19 @@ namespace RapidOrder.ProducerAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddSingleton<Producer>();
+            builder.Services.AddSingleton<IDbHelper>((service) =>
+            {
+                DbConfig config = new DbConfig()
+                {
+                    DbType = Common.AllEnums.dbType.MySql,
+                    ConnectionString = builder.Configuration.GetConnectionString("DefaultConfiguration")
+                };
+                return Database.GetDbContext(config);
+            });
 
             builder.Services.AddControllers();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

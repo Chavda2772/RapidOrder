@@ -25,7 +25,7 @@ namespace RapidOrder.Common.RabbitMQ
             return factory.CreateConnection();
         }
 
-        public bool SendBulkMessage()
+        public bool SendMessage(string message)
         {
             string queueName = "test_queue";
             string exchangeName = "ChangeExchange";
@@ -59,20 +59,17 @@ namespace RapidOrder.Common.RabbitMQ
                 IBasicProperties properties = model.CreateBasicProperties();
                 properties.Persistent = false;
 
-                // Send bulk message
-                for (int i = 0; i < 1; i++)
-                {
-                    byte[] messageBuffer = Encoding.Default.GetBytes($"Message count is: {i}");
+                // Send message                
+                byte[] messageBuffer = Encoding.Default.GetBytes($"Message: '{message}'");
 
-                    // Send message
-                    model.BasicPublish(
-                        exchange: exchangeName,
-                        routingKey: exchangeKey,
-                        basicProperties: properties,
-                        body: messageBuffer);
+                // Send message
+                model.BasicPublish(
+                    exchange: exchangeName,
+                    routingKey: exchangeKey,
+                    basicProperties: properties,
+                    body: messageBuffer);
 
-                    Console.WriteLine($"Message send {i}");
-                }
+                Console.WriteLine($"Message sended");
 
                 // Close server connection
                 model.Close();

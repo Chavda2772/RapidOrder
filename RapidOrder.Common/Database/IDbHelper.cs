@@ -9,6 +9,7 @@ namespace RapidOrder.Common.Database
 {
     public interface IDbHelper
     {
+        bool AddOrderToCart();
         List<Product> GetProductList();
     }
 }

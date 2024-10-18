@@ -23,3 +23,5 @@ RapidOrder.ProducerAPI/obj
 *.sqlproj.user
 RapidOrder.Database/bin
 RapidOrder.Database/obj
+/RapidOrder.Producer/bin/Debug/net8.0
+/RapidOrder.Producer/obj

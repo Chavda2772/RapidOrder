@@ -9,6 +9,11 @@ namespace RapidOrder.Common.Database.MySql
 {
     public class MySqlDB : IDbHelper
     {
+        public bool AddOrderToCart()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetProductList()
         {
             throw new NotImplementedException();

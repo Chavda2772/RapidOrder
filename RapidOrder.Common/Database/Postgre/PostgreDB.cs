@@ -9,6 +9,11 @@ namespace RapidOrder.Common.Database.Postgre
 {
     public class PostgreDB : IDbHelper
     {
+        public bool AddOrderToCart()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetProductList()
         {
             throw new NotImplementedException();

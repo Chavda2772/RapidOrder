@@ -9,17 +9,17 @@ namespace RapidOrder.ProducerAPI.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
-        private readonly Producer _messageProducer;
+        private readonly Producer _producer;
 
-        public OrderController()
+        public OrderController(Producer producer)
         {
-            _messageProducer = new Producer();
+            _producer = producer;
         }
 
         [HttpPost]
         public IActionResult AddOrder()
         {
-            _messageProducer.SendBulkMessage();
+            _producer.SendMessage("Hello");
             return Ok("Messages Sended.");
         }
     }

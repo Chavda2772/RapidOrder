@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{D3
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RapidOrder.Database", "RapidOrder.Database\RapidOrder.Database.sqlproj", "{01E065D9-C60E-4183-B16F-D17F50861B40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidOrder.Producer", "RapidOrder.Producer\RapidOrder.Producer.csproj", "{F081ACF7-699F-4431-BDF8-65AE94ED0778}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{01E065D9-C60E-4183-B16F-D17F50861B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01E065D9-C60E-4183-B16F-D17F50861B40}.Release|Any CPU.Build.0 = Release|Any CPU
 		{01E065D9-C60E-4183-B16F-D17F50861B40}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F081ACF7-699F-4431-BDF8-65AE94ED0778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F081ACF7-699F-4431-BDF8-65AE94ED0778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F081ACF7-699F-4431-BDF8-65AE94ED0778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F081ACF7-699F-4431-BDF8-65AE94ED0778}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

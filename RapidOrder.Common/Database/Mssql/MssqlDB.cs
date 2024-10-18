@@ -21,12 +21,35 @@ namespace RapidOrder.Common.Database.Mssql
             _connectionString = config.ConnectionString;
         }
 
+        #region Cart
+
+        // ADD to cart
+        public bool AddOrderToCart()
+        {
+            int rowsAffected;
+            try
+            {
+                string query = "INSERT INTO Cart (UserId , ProductId, Quantity) VALUES (1, 3, 11)";
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+                    connection.Open();
+                    rowsAffected = command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return rowsAffected > 0;
+        }
+        #endregion
+
         public List<Product> GetProductList()
         {
             DataTable dt = new DataTable();
             try
             {
-
                 using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     using (SqlCommand command = new SqlCommand("GetAllProducts", connection))

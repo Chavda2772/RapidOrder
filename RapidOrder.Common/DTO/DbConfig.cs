@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static RapidOrder.Common.AllEnums;
 
-namespace RapidOrder.Common.Database
+namespace RapidOrder.Common.DTO
 {
     public class DbConfig
     {

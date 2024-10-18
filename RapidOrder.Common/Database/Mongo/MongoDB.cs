@@ -9,6 +9,11 @@ namespace RapidOrder.Common.Database.Mongo
 {
     public class MongoDB : IDbHelper
     {
+        public bool AddOrderToCart()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetProductList()
         {
             throw new NotImplementedException();
